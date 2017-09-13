@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6390C4061F68EF630030308C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390C4051F68EF630030308C /* AppDelegate.swift */; };
+		6390C40B1F68EF630030308C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6390C4091F68EF630030308C /* Main.storyboard */; };
+		6390C40D1F68EF630030308C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6390C40C1F68EF630030308C /* Assets.xcassets */; };
+		6390C4101F68EF630030308C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6390C40E1F68EF630030308C /* LaunchScreen.storyboard */; };
+		6390C41A1F68F0520030308C /* Plato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390C4191F68F0520030308C /* Plato.swift */; };
+		63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9BADD1F6928D70044B43D /* ViewController.swift */; };
+		63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */; };
+		63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		634E83251F68FB8F00D151B4 /* TablaPlatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablaPlatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		634E83261F68FBB200D151B4 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		6390C4051F68EF630030308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6390C40A1F68EF630030308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6390C40C1F68EF630030308C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6390C40F1F68EF630030308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6390C4111F68EF630030308C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6390C4191F68F0520030308C /* Plato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plato.swift; sourceTree = "<group>"; };
+		63A9BADD1F6928D70044B43D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TablaPlatos.framework; path = "../../Library/Developer/Xcode/DerivedData/TablaPlatos-afrphxzhufjoedcrvqvfuixaoqem/Build/Products/Debug-iphonesimulator/Pods_TablaPlatos.framework"; sourceTree = "<group>"; };
+		63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidoViewController.swift; sourceTree = "<group>"; };
+		8CE75D66519AB916F77EB17B /* Pods_TablaPlatos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TablaPlatos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.release.xcconfig"; sourceTree = "<group>"; };
+		F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6390C3FF1F68EF630030308C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508A151D308C2AACCD88C942 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */,
+				DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6390C3F91F68EF630030308C = {
+			isa = PBXGroup;
+			children = (
+				6390C4041F68EF630030308C /* TablaPlatos */,
+				B0E5F9CEDD32B31C6BA85532 /* Frameworks */,
+				634E83251F68FB8F00D151B4 /* TablaPlatos.app */,
+				508A151D308C2AACCD88C942 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6390C4041F68EF630030308C /* TablaPlatos */ = {
+			isa = PBXGroup;
+			children = (
+				6390C4181F68F0060030308C /* entities */,
+				63A9BADD1F6928D70044B43D /* ViewController.swift */,
+				6390C4051F68EF630030308C /* AppDelegate.swift */,
+				6390C4091F68EF630030308C /* Main.storyboard */,
+				6390C40C1F68EF630030308C /* Assets.xcassets */,
+				6390C40E1F68EF630030308C /* LaunchScreen.storyboard */,
+				6390C4111F68EF630030308C /* Info.plist */,
+				63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */,
+			);
+			path = TablaPlatos;
+			sourceTree = "<group>";
+		};
+		6390C4181F68F0060030308C /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				6390C4191F68F0520030308C /* Plato.swift */,
+			);
+			name = entities;
+			sourceTree = "<group>";
+		};
+		B0E5F9CEDD32B31C6BA85532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */,
+				634E83261F68FBB200D151B4 /* AFNetworking.framework */,
+				8CE75D66519AB916F77EB17B /* Pods_TablaPlatos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6390C4011F68EF630030308C /* TablaPlatos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6390C4141F68EF630030308C /* Build configuration list for PBXNativeTarget "TablaPlatos" */;
+			buildPhases = (
+				94FF861D5CE96FDF7B047A23 /* [CP] Check Pods Manifest.lock */,
+				6390C3FE1F68EF630030308C /* Sources */,
+				6390C3FF1F68EF630030308C /* Frameworks */,
+				6390C4001F68EF630030308C /* Resources */,
+				2443255EEDCEF935016A262F /* [CP] Embed Pods Frameworks */,
+				5FE3AE8DF34C594D41DA5D12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TablaPlatos;
+			productName = TablaPlatos;
+			productReference = 634E83251F68FB8F00D151B4 /* TablaPlatos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6390C3FA1F68EF630030308C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = isis3510;
+				TargetAttributes = {
+					6390C4011F68EF630030308C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BQ76AY7F35;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6390C3FD1F68EF630030308C /* Build configuration list for PBXProject "TablaPlatos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6390C3F91F68EF630030308C;
+			productRefGroup = 6390C3F91F68EF630030308C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6390C4011F68EF630030308C /* TablaPlatos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6390C4001F68EF630030308C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6390C4101F68EF630030308C /* LaunchScreen.storyboard in Resources */,
+				6390C40D1F68EF630030308C /* Assets.xcassets in Resources */,
+				6390C40B1F68EF630030308C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2443255EEDCEF935016A262F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE3AE8DF34C594D41DA5D12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94FF861D5CE96FDF7B047A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TablaPlatos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6390C3FE1F68EF630030308C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6390C41A1F68F0520030308C /* Plato.swift in Sources */,
+				63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */,
+				63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */,
+				6390C4061F68EF630030308C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6390C4091F68EF630030308C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6390C40A1F68EF630030308C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6390C40E1F68EF630030308C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6390C40F1F68EF630030308C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6390C4121F68EF630030308C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6390C4131F68EF630030308C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6390C4151F68EF630030308C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BQ76AY7F35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
+				INFOPLIST_FILE = TablaPlatos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.TablaPlatos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6390C4161F68EF630030308C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BQ76AY7F35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
+				INFOPLIST_FILE = TablaPlatos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.TablaPlatos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6390C3FD1F68EF630030308C /* Build configuration list for PBXProject "TablaPlatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6390C4121F68EF630030308C /* Debug */,
+				6390C4131F68EF630030308C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6390C4141F68EF630030308C /* Build configuration list for PBXNativeTarget "TablaPlatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6390C4151F68EF630030308C /* Debug */,
+				6390C4161F68EF630030308C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6390C3FA1F68EF630030308C /* Project object */;
+}

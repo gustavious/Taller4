@@ -1,0 +1,6 @@
+framework module Pods_TablaPlatos {
+  umbrella header "Pods-TablaPlatos-umbrella.h"
+
+  export *
+  module * { export * }
+}
