@@ -9,18 +9,29 @@
 import UIKit
 import AFNetworking
 
+var metodoSeleccionado: String = "Efectivo"
+
 class PedidoViewController: UIViewController {
     
     var platoSeleccionado: Plato!
     @IBOutlet weak var lugarTextField: UITextField!
     @IBOutlet weak var nombreTextField: UITextField!
     
+    @IBOutlet weak var labelMetodoPago: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        print("ViewDidLoad")
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        labelMetodoPago.text = "Pago con " + metodoSeleccionado
+        print("view will appear")
     }
     
     

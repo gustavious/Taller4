@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="381" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ju9-ca-N2E" id="gYM-Vh-dIM">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="97"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8B-vD-pNP">
@@ -53,9 +53,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ZIt-ds-KJZ" kind="presentation" identifier="ShowPedidoView" id="rEN-yC-e8H"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -64,6 +61,7 @@
                     </view>
                     <connections>
                         <outlet property="tableViewPlatos" destination="l1Q-8b-RQC" id="fd4-eS-sIQ"/>
+                        <segue destination="ZIt-ds-KJZ" kind="presentation" identifier="ShowPedidoView" id="Nnd-ln-R9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -117,17 +115,94 @@
                                     <action selector="hacerPedido:" destination="ZIt-ds-KJZ" eventType="touchUpInside" id="qbo-xu-vfB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SK-Ol-DJE">
+                                <rect key="frame" x="92" y="311" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cambiar metodo de pago"/>
+                                <connections>
+                                    <segue destination="zV2-Ak-urj" kind="presentation" id="CGz-fA-B4G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-VJ-m03">
+                                <rect key="frame" x="92" y="249" width="192" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="labelMetodoPago" destination="3wd-VJ-m03" id="J4u-Ib-mwg"/>
                         <outlet property="lugarTextField" destination="GhT-2h-guC" id="jCx-NA-nDL"/>
                         <outlet property="nombreTextField" destination="iRU-3J-aSq" id="5DI-HD-mbr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soD-Xq-TmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="126.38680659670166"/>
+            <point key="canvasLocation" x="877.60000000000002" y="139.880059970015"/>
+        </scene>
+        <!--Metodo Pago View Controller-->
+        <scene sceneID="H9v-Cj-REF">
+            <objects>
+                <viewController id="zV2-Ak-urj" customClass="MetodoPagoViewController" customModule="TablaPlatos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWG-rL-v5W"/>
+                        <viewControllerLayoutGuide type="bottom" id="vWh-Nw-Mpk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="npq-AK-QxD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wmC-YB-Qkw">
+                                <rect key="frame" x="177" y="257" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrV-4d-Kmd">
+                                <rect key="frame" x="123" y="580" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirmar!"/>
+                                <connections>
+                                    <action selector="confirmar:" destination="zV2-Ak-urj" eventType="touchUpInside" id="DXz-UZ-acm"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yZ-c7-o38">
+                                <rect key="frame" x="-32" y="24" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Metodo de Pago" id="f9m-we-6e5">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="1Ko-gP-FN2">
+                                            <connections>
+                                                <action selector="dimissView:" destination="zV2-Ak-urj" id="ccu-oL-cHw"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DkS-rO-sYl">
+                                <rect key="frame" x="40" y="343" width="295" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Efectivo"/>
+                                </segments>
+                                <connections>
+                                    <action selector="cambioMetodoPago:" destination="zV2-Ak-urj" eventType="valueChanged" id="qNT-cG-h9u"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingSpinner" destination="wmC-YB-Qkw" id="7xF-FT-1eU"/>
+                        <outlet property="segmentedPago" destination="DkS-rO-sYl" id="TpP-az-FLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oej-Fz-68n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

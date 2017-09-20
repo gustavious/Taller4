@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SowPedidoView"{
+        if segue.identifier == "ShowPedidoView"{
             
             
           let viewController: PedidoViewController = segue.destination as! PedidoViewController

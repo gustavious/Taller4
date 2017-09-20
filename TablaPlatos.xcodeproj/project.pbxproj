@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638BB5671F724257003A4001 /* MetodoPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638BB5661F724256003A4001 /* MetodoPagoViewController.swift */; };
 		6390C4061F68EF630030308C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390C4051F68EF630030308C /* AppDelegate.swift */; };
 		6390C40B1F68EF630030308C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6390C4091F68EF630030308C /* Main.storyboard */; };
 		6390C40D1F68EF630030308C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6390C40C1F68EF630030308C /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		634E83251F68FB8F00D151B4 /* TablaPlatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablaPlatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634E83261F68FBB200D151B4 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		638BB5661F724256003A4001 /* MetodoPagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetodoPagoViewController.swift; sourceTree = "<group>"; };
 		6390C4051F68EF630030308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6390C40A1F68EF630030308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6390C40C1F68EF630030308C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				6390C40E1F68EF630030308C /* LaunchScreen.storyboard */,
 				6390C4111F68EF630030308C /* Info.plist */,
 				63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */,
+				638BB5661F724256003A4001 /* MetodoPagoViewController.swift */,
 			);
 			path = TablaPlatos;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				6390C41A1F68F0520030308C /* Plato.swift in Sources */,
 				63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */,
+				638BB5671F724257003A4001 /* MetodoPagoViewController.swift in Sources */,
 				63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */,
 				6390C4061F68EF630030308C /* AppDelegate.swift in Sources */,
 			);
