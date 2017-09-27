@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		638BB5671F724257003A4001 /* MetodoPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638BB5661F724256003A4001 /* MetodoPagoViewController.swift */; };
+		638BB5691F7B60D6003A4001 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638BB5681F7B60D6003A4001 /* Contacts.framework */; };
+		638BB56B1F7B611F003A4001 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638BB56A1F7B611F003A4001 /* ContactsUI.framework */; };
+		638BB56D1F7B6509003A4001 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638BB56C1F7B6509003A4001 /* MessageUI.framework */; };
+		638BB56F1F7B71CC003A4001 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638BB56E1F7B71CC003A4001 /* CoreLocation.framework */; };
+		638BB5711F7B71D3003A4001 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638BB5701F7B71D3003A4001 /* CoreMotion.framework */; };
 		6390C4061F68EF630030308C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390C4051F68EF630030308C /* AppDelegate.swift */; };
 		6390C40B1F68EF630030308C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6390C4091F68EF630030308C /* Main.storyboard */; };
 		6390C40D1F68EF630030308C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6390C40C1F68EF630030308C /* Assets.xcassets */; };
@@ -22,6 +27,11 @@
 		634E83251F68FB8F00D151B4 /* TablaPlatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TablaPlatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634E83261F68FBB200D151B4 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		638BB5661F724256003A4001 /* MetodoPagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetodoPagoViewController.swift; sourceTree = "<group>"; };
+		638BB5681F7B60D6003A4001 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		638BB56A1F7B611F003A4001 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		638BB56C1F7B6509003A4001 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		638BB56E1F7B71CC003A4001 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		638BB5701F7B71D3003A4001 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		6390C4051F68EF630030308C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6390C40A1F68EF630030308C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6390C40C1F68EF630030308C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +51,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638BB5711F7B71D3003A4001 /* CoreMotion.framework in Frameworks */,
+				638BB56F1F7B71CC003A4001 /* CoreLocation.framework in Frameworks */,
+				638BB56D1F7B6509003A4001 /* MessageUI.framework in Frameworks */,
+				638BB56B1F7B611F003A4001 /* ContactsUI.framework in Frameworks */,
+				638BB5691F7B60D6003A4001 /* Contacts.framework in Frameworks */,
 				63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +109,11 @@
 		B0E5F9CEDD32B31C6BA85532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				638BB5701F7B71D3003A4001 /* CoreMotion.framework */,
+				638BB56E1F7B71CC003A4001 /* CoreLocation.framework */,
+				638BB56C1F7B6509003A4001 /* MessageUI.framework */,
+				638BB56A1F7B611F003A4001 /* ContactsUI.framework */,
+				638BB5681F7B60D6003A4001 /* Contacts.framework */,
 				63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */,
 				634E83261F68FBB200D151B4 /* AFNetworking.framework */,
 				8CE75D66519AB916F77EB17B /* Pods_TablaPlatos.framework */,
