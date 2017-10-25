@@ -121,7 +121,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         let currentPlato: Plato = platos[indexPath.row]
         let imageView = cell.viewWithTag(1) as! UIImageView
-        downloadlmage(url: URL(String : currentPlato.imagen!)!, imageView: imageView)
+        downloadImage(url: URL(string : currentPlato.imagen!)!, imageView: imageView)
         
         
         let labelNombre: UILabel = cell.viewWithTag(2) as! UILabel
@@ -157,7 +157,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    func downloadlmage(url: URL, imageView: UIImageView) {
+    func downloadImage(url: URL, imageView: UIImageView) {
         print("Download Started")
         DispatchQueue.global(qos: .userInteractive).async{
 
