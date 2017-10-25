@@ -29,7 +29,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //contactPicker.delegate = self
         
         
-       getPlatos()
+        getPlatos{(platos: [Plato]?) in
+            if platos != nil {
+                self.platos = platos!
+                DispatchQueue.main.async {
+                    self.tableViewPlatos.reloadData()
+                }
+            }
+            else{
+                print("Error al obener los platos")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,24 +110,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func getPlatos(){
-        
-        
-        manager.get("/platos", parameters: nil, progress: { (progress) in
-            
-        }, success: { (URLSessionDataTask, response) in
-            let arrayResponse: NSArray = response! as! NSArray
-            print(arrayResponse)
-            
-            for item in arrayResponse {
-                let currentPlato: Plato = Plato(item as! Dictionary<String, AnyObject>)
-                self.platos.append(currentPlato)
-                self.tableViewPlatos.reloadData()
-            }
-        }) { ( task: URLSessionDataTask? , error: Error) in
-            print("Error task \(task) -- Error Response \(error) ")
-        }
-    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return platos.count
@@ -128,7 +121,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         let currentPlato: Plato = platos[indexPath.row]
         let imageView = cell.viewWithTag(1) as! UIImageView
-        imageView.setImageWith(URL(string: currentPlato.imagen!)!)
+        downloadlmage(url: URL(String : currentPlato.imagen!)!, imageView: imageView)
+        
+        
         let labelNombre: UILabel = cell.viewWithTag(2) as! UILabel
         labelNombre.text = currentPlato.nombre!
         let labelPrecio = cell.viewWithTag(3) as! UILabel
@@ -162,11 +157,61 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+    func downloadlmage(url: URL, imageView: UIImageView) {
+        print("Download Started")
+        DispatchQueue.global(qos: .userInteractive).async{
+
+            self.getDataFromUrl(url: url){ (data, response, error) in
+                guard let data = data, error == nil else { return }
+                print(response?.suggestedFilename ?? url.lastPathComponent)
+                print("Download Finished")
+                DispatchQueue.main.async(){ () -> Void in
+                imageView.image = UIImage(data: data)
+                }
+            }
+        }
+    }
     
-  
+    
+    
+    func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _ response: URLResponse?, _ errror: Error?) -> Void){
+        
+        URLSession.shared.dataTask(with: url){
+            (data, response, error) in
+            completion(data, response, error)
+        }.resume()
+
+    }
+
    
 
    
+} //END
+
+extension UIViewController{
+    
+    func getPlatos(_ completion: @escaping (_ success: [Plato]?) -> ()){
+        
+        
+        manager.get("/platos", parameters: nil, progress: { (progress) in
+            
+        }, success: { (URLSessionDataTask, response) in
+            let arrayResponse: NSArray = response! as! NSArray
+            var platosRespuesta: [Plato] = [Plato]()
+            print(arrayResponse)
+            
+            for item in arrayResponse {
+                let currentPlato: Plato = Plato(item as! Dictionary<String, AnyObject>)
+                platosRespuesta.append(currentPlato)
+               
+            }
+            
+            completion(platosRespuesta)
+        }) { ( task: URLSessionDataTask? , error: Error) in
+            print("Error task \(task) -- Error Response \(error) ")
+        }
+    }
+    
 }
 
 
