@@ -21,6 +21,8 @@
 		63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9BADD1F6928D70044B43D /* ViewController.swift */; };
 		63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */; };
 		63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */; };
+		A205757F1FB35C6300850F30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205757E1FB35C6300850F30 /* CoreData.framework */; };
+		A20575821FB35C8500850F30 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A20575801FB35C8500850F30 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TablaPlatos.framework; path = "../../Library/Developer/Xcode/DerivedData/TablaPlatos-afrphxzhufjoedcrvqvfuixaoqem/Build/Products/Debug-iphonesimulator/Pods_TablaPlatos.framework"; sourceTree = "<group>"; };
 		63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidoViewController.swift; sourceTree = "<group>"; };
 		8CE75D66519AB916F77EB17B /* Pods_TablaPlatos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TablaPlatos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205757E1FB35C6300850F30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A20575811FB35C8500850F30 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.release.xcconfig"; sourceTree = "<group>"; };
 		F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A205757F1FB35C6300850F30 /* CoreData.framework in Frameworks */,
 				638BB5711F7B71D3003A4001 /* CoreMotion.framework in Frameworks */,
 				638BB56F1F7B71CC003A4001 /* CoreLocation.framework in Frameworks */,
 				638BB56D1F7B6509003A4001 /* MessageUI.framework in Frameworks */,
@@ -94,6 +99,7 @@
 				6390C4111F68EF630030308C /* Info.plist */,
 				63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */,
 				638BB5661F724256003A4001 /* MetodoPagoViewController.swift */,
+				A20575801FB35C8500850F30 /* Model.xcdatamodeld */,
 			);
 			path = TablaPlatos;
 			sourceTree = "<group>";
@@ -109,6 +115,7 @@
 		B0E5F9CEDD32B31C6BA85532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A205757E1FB35C6300850F30 /* CoreData.framework */,
 				638BB5701F7B71D3003A4001 /* CoreMotion.framework */,
 				638BB56E1F7B71CC003A4001 /* CoreLocation.framework */,
 				638BB56C1F7B6509003A4001 /* MessageUI.framework */,
@@ -256,6 +263,7 @@
 				638BB5671F724257003A4001 /* MetodoPagoViewController.swift in Sources */,
 				63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */,
 				6390C4061F68EF630030308C /* AppDelegate.swift in Sources */,
+				A20575821FB35C8500850F30 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +440,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A20575801FB35C8500850F30 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A20575811FB35C8500850F30 /* Model.xcdatamodel */,
+			);
+			currentVersion = A20575811FB35C8500850F30 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6390C3FA1F68EF630030308C /* Project object */;
 }
