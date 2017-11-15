@@ -7,5 +7,7 @@ target 'TablaPlatos' do
 
   # Pods for TablaPlatos
   pod 'AFNetworking', '~> 3.0'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end

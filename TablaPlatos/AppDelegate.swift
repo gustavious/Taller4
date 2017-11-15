@@ -9,6 +9,7 @@
 import UIKit
 import AFNetworking
 import CoreData
+import GoogleMaps
 
 var baseURL:URL = URL(string: "http://demo7931028.mockable.io/")!
 let manager = AFHTTPSessionManager(baseURL: baseURL as URL!)
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyCw-CSsrgx-qcxxEtuVBYCmEQdHBwnPUaA")
         return true
     }
 

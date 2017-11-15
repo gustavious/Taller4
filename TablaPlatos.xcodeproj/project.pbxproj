@@ -21,8 +21,10 @@
 		63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9BADD1F6928D70044B43D /* ViewController.swift */; };
 		63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FCE10E1F69041B0060D6FC /* Pods_TablaPlatos.framework */; };
 		63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCE1101F690B8D0060D6FC /* PedidoViewController.swift */; };
+		778AA7509D7E11DDC4F1EEE0 /* Pods_TablaPlatos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE75D66519AB916F77EB17B /* Pods_TablaPlatos.framework */; };
 		A205757F1FB35C6300850F30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205757E1FB35C6300850F30 /* CoreData.framework */; };
 		A20575821FB35C8500850F30 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A20575801FB35C8500850F30 /* Model.xcdatamodeld */; };
+		ECDE33851FBBE433008A62D7 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDE33841FBBE433008A62D7 /* MapaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,7 @@
 		A205757E1FB35C6300850F30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A20575811FB35C8500850F30 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.release.xcconfig"; sourceTree = "<group>"; };
+		ECDE33841FBBE433008A62D7 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +65,7 @@
 				638BB56B1F7B611F003A4001 /* ContactsUI.framework in Frameworks */,
 				638BB5691F7B60D6003A4001 /* Contacts.framework in Frameworks */,
 				63FCE10F1F69041B0060D6FC /* Pods_TablaPlatos.framework in Frameworks */,
+				778AA7509D7E11DDC4F1EEE0 /* Pods_TablaPlatos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 				63A9BADD1F6928D70044B43D /* ViewController.swift */,
 				6390C4051F68EF630030308C /* AppDelegate.swift */,
 				6390C4091F68EF630030308C /* Main.storyboard */,
+				ECDE33841FBBE433008A62D7 /* MapaViewController.swift */,
 				6390C40C1F68EF630030308C /* Assets.xcassets */,
 				6390C40E1F68EF630030308C /* LaunchScreen.storyboard */,
 				6390C4111F68EF630030308C /* Info.plist */,
@@ -163,7 +168,7 @@
 				TargetAttributes = {
 					6390C4011F68EF630030308C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BQ76AY7F35;
+						DevelopmentTeam = 6X4R8R6HB3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,9 +229,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -262,6 +271,7 @@
 				63FCE1111F690B8D0060D6FC /* PedidoViewController.swift in Sources */,
 				638BB5671F724257003A4001 /* MetodoPagoViewController.swift in Sources */,
 				63A9BADE1F6928D70044B43D /* ViewController.swift in Sources */,
+				ECDE33851FBBE433008A62D7 /* MapaViewController.swift in Sources */,
 				6390C4061F68EF630030308C /* AppDelegate.swift in Sources */,
 				A20575821FB35C8500850F30 /* Model.xcdatamodeld in Sources */,
 			);
@@ -387,7 +397,7 @@
 			baseConfigurationReference = F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BQ76AY7F35;
+				DEVELOPMENT_TEAM = 6X4R8R6HB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
@@ -405,7 +415,7 @@
 			baseConfigurationReference = DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BQ76AY7F35;
+				DEVELOPMENT_TEAM = 6X4R8R6HB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
