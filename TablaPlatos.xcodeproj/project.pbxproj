@@ -50,6 +50,7 @@
 		A20575811FB35C8500850F30 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.release.xcconfig"; sourceTree = "<group>"; };
 		ECDE33841FBBE433008A62D7 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		ECFE5F751FC48DF600A84892 /* TablaPlatos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TablaPlatos-Bridging-Header.h"; sourceTree = "<group>"; };
 		F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablaPlatos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TablaPlatos/Pods-TablaPlatos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +88,7 @@
 				6390C4041F68EF630030308C /* TablaPlatos */,
 				B0E5F9CEDD32B31C6BA85532 /* Frameworks */,
 				634E83251F68FB8F00D151B4 /* TablaPlatos.app */,
+				ECFE5F751FC48DF600A84892 /* TablaPlatos-Bridging-Header.h */,
 				508A151D308C2AACCD88C942 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 				6390C4001F68EF630030308C /* Resources */,
 				2443255EEDCEF935016A262F /* [CP] Embed Pods Frameworks */,
 				5FE3AE8DF34C594D41DA5D12 /* [CP] Copy Pods Resources */,
+				ECFE5F791FC48F3700A84892 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,6 +172,7 @@
 					6390C4011F68EF630030308C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6X4R8R6HB3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -259,6 +263,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		ECFE5F791FC48F3700A84892 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT=`/usr/bin/find \"${SRCROOT}\" -name newrelic_postbuild.sh | head -n 1`\n\n/bin/sh \"${SCRIPT}\" \"AAdd1e2e70344df3113c9c81e21dee1e900b4c685f\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -397,6 +414,7 @@
 			baseConfigurationReference = F74BD8BAB4D5310ED39AC85E /* Pods-TablaPlatos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6X4R8R6HB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,8 +422,10 @@
 				);
 				INFOPLIST_FILE = TablaPlatos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.TablaPlatos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.lab12.TablaPlatos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TablaPlatos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -415,6 +435,7 @@
 			baseConfigurationReference = DC09E88A04EB7C4222C841A1 /* Pods-TablaPlatos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6X4R8R6HB3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,8 +443,9 @@
 				);
 				INFOPLIST_FILE = TablaPlatos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.TablaPlatos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isis3510.lab12.TablaPlatos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TablaPlatos-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyCw-CSsrgx-qcxxEtuVBYCmEQdHBwnPUaA")
+        
+        NewRelicAgent.start(withApplicationToken: "AAdd1e2e70344df3113c9c81e21dee1e900b4c685f")
+        
         return true
     }
 

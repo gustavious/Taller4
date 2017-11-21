@@ -73,31 +73,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-Kj-PSL">
-                                <rect key="frame" x="0.0" y="33" width="128" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Agregar plato"/>
-                                <connections>
-                                    <action selector="agregarPlato:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzf-Xr-AzG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKr-kG-LlV">
-                                <rect key="frame" x="142" y="42" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sincronizar"/>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXU-8g-Ofk">
-                                <rect key="frame" x="302" y="41" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="cambiarCargarPrefs:" destination="BYZ-38-t0r" eventType="valueChanged" id="gVw-6J-EAZ"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="switchCargar" destination="cXU-8g-Ofk" id="2fu-mK-keu"/>
                         <outlet property="tableViewPlatos" destination="l1Q-8b-RQC" id="fd4-eS-sIQ"/>
                         <segue destination="ZIt-ds-KJZ" kind="presentation" identifier="ShowPedidoView" id="Nnd-ln-R9Y"/>
                     </connections>
